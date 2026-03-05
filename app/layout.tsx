@@ -16,6 +16,7 @@ export const metadata: Metadata = {
       : [],
   },
   other: {
+    "base:app_id": "69a95311223099cde8305982",
     "fc:frame": JSON.stringify({
       version: minikitConfig.miniapp.version,
       name: minikitConfig.miniapp.name,
@@ -25,7 +26,6 @@ export const metadata: Metadata = {
       homeUrl: minikitConfig.miniapp.homeUrl,
     }),
   },
-};
 
 export default function RootLayout({
   children,
