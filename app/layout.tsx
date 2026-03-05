@@ -26,6 +26,7 @@ export const metadata: Metadata = {
       homeUrl: minikitConfig.miniapp.homeUrl,
     }),
   },
+};
 
 export default function RootLayout({
   children,
