@@ -231,7 +231,7 @@ export default function VibeCheck() {
           </div>
 
           <div className="space-y-3">
-            {MOODS.sort((a, b) => (votes[b.id] || 0) - (votes[a.id] || 0)).map(
+            {[...MOODS].sort((a, b) => (votes[b.id] || 0) - (votes[a.id] || 0)).map(
               (mood) => {
                 const pct = getPercentage(mood.id);
                 const isSelected = selectedMood === mood.id;
